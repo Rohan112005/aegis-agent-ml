@@ -1,0 +1,38 @@
+{
+  "evaluation_type": "CICIDS2017 Wednesday dataset; benign validation split and sampled attack records",
+  "records_evaluated": 119239,
+  "benign_records": 87933,
+  "attack_records": 31306,
+  "saved_threshold": 2.6256161800119686e-05,
+  "candidate_threshold": 2.6399691705591977e-05,
+  "current_metrics": {
+    "threshold": 2.6256161800119686e-05,
+    "accuracy": 0.7751910029436677,
+    "precision": 0.6692492853919061,
+    "recall": 0.2841947230562831,
+    "f1": 0.39896860986547084,
+    "false_positive_rate": 0.05000398030318538,
+    "true_negative": 83536,
+    "false_positive": 4397,
+    "false_negative": 22409,
+    "true_positive": 8897
+  },
+  "candidate_metrics": {
+    "threshold": 2.6399691705591977e-05,
+    "accuracy": 0.778763659540922,
+    "precision": 0.6920018709073901,
+    "recall": 0.2835558678847505,
+    "f1": 0.4022748901074002,
+    "false_positive_rate": 0.04493193681553,
+    "true_negative": 83982,
+    "false_positive": 3951,
+    "false_negative": 22429,
+    "true_positive": 8877
+  },
+  "benign_only_false_positive_rates": {
+    "current": 0.05000398030318538,
+    "candidate": 0.04493193681553
+  },
+  "warning": "Attack records are sampled from CICIDS2017 Wednesday. This comparison is exploratory, not independent validation. The benign validation split may already have been used for threshold calibration. Do not use these results alone to claim real-world performance.",
+  "configuration_changed": false
+}

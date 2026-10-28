@@ -1,0 +1,20 @@
+{
+  "threshold": 0.0004938646219670763,
+  "percentile": 95.0,
+  "calibration_samples": 65949,
+  "input_dim": 10,
+  "features": [
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Average Packet Size"
+  ],
+  "training_data": "CICIDS2017 Wednesday BENIGN training split",
+  "candidate_only": true
+}

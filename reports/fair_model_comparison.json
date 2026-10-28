@@ -1,0 +1,48 @@
+{
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "device": "cpu",
+  "target_false_positive_rate": 0.05,
+  "calibration_records": 219841,
+  "benign_test_records": 219842,
+  "attack_test_records": 20011,
+  "results": {
+    "production": {
+      "threshold": 2.6399691705591977e-05,
+      "accuracy": 0.900338957611537,
+      "precision": 0.3771846804214777,
+      "attack_recall": 0.29873569536754785,
+      "f1_score": 0.33340769659788067,
+      "false_positive_rate": 0.044900428489551586,
+      "true_negatives": 209971,
+      "false_positives": 9871,
+      "false_negatives": 14033,
+      "true_positives": 5978,
+      "target_calibration_fpr": 0.05,
+      "measured_calibration_fpr": 0.04555565158455429,
+      "benign_test_false_positive_rate": 0.044900428489551586,
+      "attack_test_recall": 0.29873569536754785
+    },
+    "candidate": {
+      "threshold": 0.0005194836994633079,
+      "accuracy": 0.8851004573634684,
+      "precision": 0.23560319461958806,
+      "attack_recall": 0.16805756833741442,
+      "f1_score": 0.19617908706431383,
+      "false_positive_rate": 0.04963109869815595,
+      "true_negatives": 208931,
+      "false_positives": 10911,
+      "false_negatives": 16648,
+      "true_positives": 3363,
+      "target_calibration_fpr": 0.05,
+      "measured_calibration_fpr": 0.04999977256289773,
+      "benign_test_false_positive_rate": 0.04963109869815595,
+      "attack_test_recall": 0.16805756833741442
+    }
+  },
+  "limitations": [
+    "Both models use the same calibration and test records.",
+    "The dataset is from the same source used in earlier experiments.",
+    "Some records may have been seen during previous model training.",
+    "This comparison is not proof of performance on unseen real-world traffic."
+  ]
+}

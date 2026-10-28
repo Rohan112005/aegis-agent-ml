@@ -1,0 +1,245 @@
+{
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "model": "production",
+  "threshold": 2.6256161800119686e-05,
+  "device": "cpu",
+  "sample_counts": {
+    "benign": 20000,
+    "total": 51306
+  },
+  "benign_false_positive_rate_percent": 4.9,
+  "detection_by_label": [
+    {
+      "label": "BENIGN",
+      "records_tested": 20000,
+      "detected": 979,
+      "missed": 19021,
+      "recall_percent": 4.89,
+      "score_median": 1.2765808605763596e-06,
+      "score_p95": 2.580936416052282e-05,
+      "score_mean": 1.954094841494225e-05
+    },
+    {
+      "label": "DoS GoldenEye",
+      "records_tested": 10000,
+      "detected": 1165,
+      "missed": 8835,
+      "recall_percent": 11.65,
+      "score_median": 1.176367914013099e-05,
+      "score_p95": 6.551285332534462e-05,
+      "score_mean": 1.874801455414854e-05
+    },
+    {
+      "label": "DoS Hulk",
+      "records_tested": 10000,
+      "detected": 3412,
+      "missed": 6588,
+      "recall_percent": 34.12,
+      "score_median": 1.9415407223277725e-05,
+      "score_p95": 6.355663936119527e-05,
+      "score_mean": 2.605498411867302e-05
+    },
+    {
+      "label": "DoS Slowhttptest",
+      "records_tested": 5499,
+      "detected": 1224,
+      "missed": 4275,
+      "recall_percent": 22.26,
+      "score_median": 1.9296758182463236e-05,
+      "score_p95": 0.0002595895784907043,
+      "score_mean": 4.664340303861536e-05
+    },
+    {
+      "label": "DoS slowloris",
+      "records_tested": 5796,
+      "detected": 3016,
+      "missed": 2780,
+      "recall_percent": 52.04,
+      "score_median": 2.7481113647809252e-05,
+      "score_p95": 0.00024777647922746837,
+      "score_mean": 5.1783823437290266e-05
+    },
+    {
+      "label": "Heartbleed",
+      "records_tested": 11,
+      "detected": 11,
+      "missed": 0,
+      "recall_percent": 100.0,
+      "score_median": 0.0030294174794107676,
+      "score_p95": 0.003484779503196478,
+      "score_mean": 0.0026734713464975357
+    }
+  ],
+  "top_reconstruction_error_features": {
+    "BENIGN": [
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 7.088454731274396e-05,
+        "median_squared_error": 3.3606806937314104e-06
+      },
+      {
+        "feature": "Flow Packets/s",
+        "mean_squared_error": 4.1097577195614576e-05,
+        "median_squared_error": 4.1342036638525315e-06
+      },
+      {
+        "feature": "ACK Flag Count",
+        "mean_squared_error": 3.938224836019799e-05,
+        "median_squared_error": 4.700719369310491e-09
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 2.06168169825105e-05,
+        "median_squared_error": 3.034863471640392e-09
+      },
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 1.7706510334392078e-05,
+        "median_squared_error": 1.4219826880434994e-06
+      }
+    ],
+    "DoS GoldenEye": [
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 0.00010393720003776252,
+        "median_squared_error": 3.184574961778708e-05
+      },
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 8.164697646861896e-05,
+        "median_squared_error": 6.809198384871706e-05
+      },
+      {
+        "feature": "SYN Flag Count",
+        "mean_squared_error": 8.853992312651826e-07,
+        "median_squared_error": 5.43751146128673e-18
+      },
+      {
+        "feature": "Flow Packets/s",
+        "mean_squared_error": 4.443452610303211e-07,
+        "median_squared_error": 2.2535068922024948e-07
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 2.7832868454424897e-07,
+        "median_squared_error": 3.103719947716854e-08
+      }
+    ],
+    "DoS Hulk": [
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 0.00014670570089947432,
+        "median_squared_error": 5.349498678697273e-05
+      },
+      {
+        "feature": "Flow Packets/s",
+        "mean_squared_error": 5.515230441233143e-05,
+        "median_squared_error": 1.213365241614639e-10
+      },
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 3.0553761462215334e-05,
+        "median_squared_error": 4.359538252174389e-06
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 2.3738683012197725e-05,
+        "median_squared_error": 1.765429601618962e-06
+      },
+      {
+        "feature": "Flow Bytes/s",
+        "mean_squared_error": 3.20036338052887e-06,
+        "median_squared_error": 1.7760181103554373e-09
+      }
+    ],
+    "DoS Slowhttptest": [
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 0.00021806122094858438,
+        "median_squared_error": 9.659951319918036e-05
+      },
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 0.00021095317788422108,
+        "median_squared_error": 9.635133756091818e-05
+      },
+      {
+        "feature": "Flow Packets/s",
+        "mean_squared_error": 2.5257655579480343e-05,
+        "median_squared_error": 3.883116397873643e-11
+      },
+      {
+        "feature": "Flow Bytes/s",
+        "mean_squared_error": 1.1534087207110133e-05,
+        "median_squared_error": 1.2379589540978397e-12
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 5.303689931679401e-07,
+        "median_squared_error": 6.637839722323235e-10
+      }
+    ],
+    "DoS slowloris": [
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 0.00041055510519072413,
+        "median_squared_error": 0.0001901576470118016
+      },
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 0.00010425403888802975,
+        "median_squared_error": 8.436951611656696e-05
+      },
+      {
+        "feature": "Flow Packets/s",
+        "mean_squared_error": 1.0993605883413693e-06,
+        "median_squared_error": 1.2492046459755546e-11
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 1.0523291393838008e-06,
+        "median_squared_error": 2.896505577609787e-07
+      },
+      {
+        "feature": "SYN Flag Count",
+        "mean_squared_error": 8.193243843379605e-07,
+        "median_squared_error": 5.473913343906193e-21
+      }
+    ],
+    "Heartbleed": [
+      {
+        "feature": "ACK Flag Count",
+        "mean_squared_error": 0.009173399768769741,
+        "median_squared_error": 0.010420762002468109
+      },
+      {
+        "feature": "Average Packet Size",
+        "mean_squared_error": 0.007570547051727772,
+        "median_squared_error": 0.008135245181620121
+      },
+      {
+        "feature": "Total Length of Fwd Packets",
+        "mean_squared_error": 0.007479099556803703,
+        "median_squared_error": 0.009168829768896103
+      },
+      {
+        "feature": "Flow Duration",
+        "mean_squared_error": 0.0022398775909096003,
+        "median_squared_error": 0.0024618813768029213
+      },
+      {
+        "feature": "Total Fwd Packets",
+        "mean_squared_error": 0.00013420578034128994,
+        "median_squared_error": 0.00014469203597400337
+      }
+    ]
+  },
+  "interpretation_notes": [
+    "Raw feature distributions describe input values, not causation.",
+    "Reconstruction error shows which scaled inputs the model reconstructs poorly.",
+    "High reconstruction error does not prove that a feature caused an attack or that the flow is malicious.",
+    "This is a sampled analysis of the CICIDS2017 Wednesday dataset.",
+    "The dataset may overlap with previous model training data.",
+    "No production model, scaler, or threshold was modified."
+  ]
+}

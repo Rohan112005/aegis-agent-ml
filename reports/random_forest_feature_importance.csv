@@ -1,0 +1,11 @@
+feature,importance
+Flow Packets/s,0.2047204980008669
+Flow Duration,0.1570770916110645
+Average Packet Size,0.13486923464697181
+Total Backward Packets,0.12188209194994722
+Total Length of Bwd Packets,0.11627572860322977
+Flow Bytes/s,0.11450555167642586
+Total Length of Fwd Packets,0.06813333962953254
+Total Fwd Packets,0.0661543814262408
+ACK Flag Count,0.008551231541855879
+SYN Flag Count,0.00783085091386472

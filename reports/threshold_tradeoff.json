@@ -1,0 +1,276 @@
+{
+  "base_threshold": 2.6256161800119686e-05,
+  "records": {
+    "benign": 439683,
+    "attacks": 31306
+  },
+  "results": [
+    {
+      "threshold_factor": 0.25,
+      "threshold": 6.564040450029922e-06,
+      "benign_false_positives": 80452,
+      "benign_false_positive_rate_percent": 18.3,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 8216,
+          "missed": 1784,
+          "recall_percent": 82.16
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 7301,
+          "missed": 2699,
+          "recall_percent": 73.01
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 4263,
+          "missed": 1236,
+          "recall_percent": 77.52
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 3593,
+          "missed": 2203,
+          "recall_percent": 61.99
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 0.5,
+      "threshold": 1.3128080900059843e-05,
+      "benign_false_positives": 44729,
+      "benign_false_positive_rate_percent": 10.17,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 4391,
+          "missed": 5609,
+          "recall_percent": 43.91
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 6144,
+          "missed": 3856,
+          "recall_percent": 61.44
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 4103,
+          "missed": 1396,
+          "recall_percent": 74.61
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 3199,
+          "missed": 2597,
+          "recall_percent": 55.19
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 0.75,
+      "threshold": 1.9692121350089764e-05,
+      "benign_false_positives": 34443,
+      "benign_false_positive_rate_percent": 7.83,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 2029,
+          "missed": 7971,
+          "recall_percent": 20.29
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 4665,
+          "missed": 5335,
+          "recall_percent": 46.65
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 1310,
+          "missed": 4189,
+          "recall_percent": 23.82
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 3022,
+          "missed": 2774,
+          "recall_percent": 52.14
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 1.0,
+      "threshold": 2.6256161800119686e-05,
+      "benign_false_positives": 22093,
+      "benign_false_positive_rate_percent": 5.02,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 1165,
+          "missed": 8835,
+          "recall_percent": 11.65
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 3412,
+          "missed": 6588,
+          "recall_percent": 34.12
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 1224,
+          "missed": 4275,
+          "recall_percent": 22.26
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 3016,
+          "missed": 2780,
+          "recall_percent": 52.04
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 1.25,
+      "threshold": 3.2820202250149605e-05,
+      "benign_false_positives": 14963,
+      "benign_false_positive_rate_percent": 3.4,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 906,
+          "missed": 9094,
+          "recall_percent": 9.06
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 2764,
+          "missed": 7236,
+          "recall_percent": 27.64
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 1190,
+          "missed": 4309,
+          "recall_percent": 21.64
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 1383,
+          "missed": 4413,
+          "recall_percent": 23.86
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 1.5,
+      "threshold": 3.938424270017953e-05,
+      "benign_false_positives": 11018,
+      "benign_false_positive_rate_percent": 2.51,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 768,
+          "missed": 9232,
+          "recall_percent": 7.68
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 2360,
+          "missed": 7640,
+          "recall_percent": 23.6
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 931,
+          "missed": 4568,
+          "recall_percent": 16.93
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 1339,
+          "missed": 4457,
+          "recall_percent": 23.1
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    },
+    {
+      "threshold_factor": 2.0,
+      "threshold": 5.251232360023937e-05,
+      "benign_false_positives": 8150,
+      "benign_false_positive_rate_percent": 1.85,
+      "attack_types": {
+        "DoS GoldenEye": {
+          "tested": 10000,
+          "detected": 645,
+          "missed": 9355,
+          "recall_percent": 6.45
+        },
+        "DoS Hulk": {
+          "tested": 10000,
+          "detected": 1159,
+          "missed": 8841,
+          "recall_percent": 11.59
+        },
+        "DoS Slowhttptest": {
+          "tested": 5499,
+          "detected": 875,
+          "missed": 4624,
+          "recall_percent": 15.91
+        },
+        "DoS slowloris": {
+          "tested": 5796,
+          "detected": 1281,
+          "missed": 4515,
+          "recall_percent": 22.1
+        },
+        "Heartbleed": {
+          "tested": 11,
+          "detected": 11,
+          "missed": 0,
+          "recall_percent": 100.0
+        }
+      }
+    }
+  ],
+  "note": "Exploratory analysis on CICIDS2017 Wednesday data; not independent real-world validation."
+}

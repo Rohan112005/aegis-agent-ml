@@ -1,0 +1,59 @@
+{
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "sampling_settings": {
+    "max_benign": 50000,
+    "max_per_attack": 10000,
+    "random_state": 42,
+    "test_size": 0.25
+  },
+  "full_cleaned_dataset": {
+    "records": 691406,
+    "rows_with_repeated_feature_vectors": 210568,
+    "unique_repeated_feature_vectors": 21233,
+    "feature_vectors_with_multiple_labels": 675,
+    "rows_in_conflicting_label_groups": 60519
+  },
+  "candidate_train_test_split": {
+    "training_records": 60979,
+    "test_records": 20327,
+    "unique_training_feature_vectors": 51651,
+    "unique_test_feature_vectors": 18058,
+    "unique_feature_vectors_in_both_sets": 1586,
+    "test_rows_whose_features_appear_in_training": 3718,
+    "test_row_overlap_percent": 18.2909,
+    "overlap_signatures_with_label_set_differences": 77,
+    "overlap_by_label": {
+      "BENIGN": {
+        "test_records": 12500,
+        "exact_feature_overlap_records": 2715
+      },
+      "DoS GoldenEye": {
+        "test_records": 2500,
+        "exact_feature_overlap_records": 4
+      },
+      "DoS Hulk": {
+        "test_records": 2500,
+        "exact_feature_overlap_records": 569
+      },
+      "DoS Slowhttptest": {
+        "test_records": 1375,
+        "exact_feature_overlap_records": 96
+      },
+      "DoS slowloris": {
+        "test_records": 1449,
+        "exact_feature_overlap_records": 334
+      },
+      "Heartbleed": {
+        "test_records": 3,
+        "exact_feature_overlap_records": 0
+      }
+    }
+  },
+  "limitations": [
+    "This checks exact feature-vector duplicates, not near duplicates.",
+    "Feature signatures use pandas 64-bit hashes, so theoretical hash collisions are possible.",
+    "Repeated feature vectors can be legitimate and do not by themselves prove leakage.",
+    "The candidate's test split is not independent of the source dataset or necessarily of previous experiments.",
+    "This audit does not prove real-world generalization."
+  ]
+}

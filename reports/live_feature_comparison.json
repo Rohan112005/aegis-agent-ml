@@ -1,0 +1,187 @@
+{
+  "training_csv": "C:\\Users\\rohan\\OneDrive\\Desktop\\nptel\\aegis-agent-ml\\data\\Wednesday-workingHours.pcap_ISCX.csv",
+  "feature_order": [
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Average Packet Size"
+  ],
+  "threshold": 2.6256161800119686e-05,
+  "valid_training_rows": 691406,
+  "benign_rows_available": 439683,
+  "attack_rows_available": 251723,
+  "sample_size_per_group": 500,
+  "benign_features": {
+    "Flow Duration": {
+      "mean": 13275493.14,
+      "median": 31795.5,
+      "std": 32483438.304436333,
+      "min": 1.0,
+      "max": 119850540.0
+    },
+    "Total Fwd Packets": {
+      "mean": 6.7,
+      "median": 2.0,
+      "std": 23.74889513303893,
+      "min": 1.0,
+      "max": 464.0
+    },
+    "Total Backward Packets": {
+      "mean": 7.258,
+      "median": 2.0,
+      "std": 37.714296657165555,
+      "min": 0.0,
+      "max": 711.0
+    },
+    "Total Length of Fwd Packets": {
+      "mean": 613.344,
+      "median": 72.0,
+      "std": 1944.7373540961344,
+      "min": 0.0,
+      "max": 19897.0
+    },
+    "Total Length of Bwd Packets": {
+      "mean": 7340.306,
+      "median": 156.5,
+      "std": 67516.16484569681,
+      "min": 0.0,
+      "max": 1273047.0
+    },
+    "Flow Bytes/s": {
+      "mean": 1251081.3868908044,
+      "median": 4199.5751789999995,
+      "std": 9087296.770586783,
+      "min": 0.0,
+      "max": 140000000.0
+    },
+    "Flow Packets/s": {
+      "mean": 43712.952834598706,
+      "median": 84.712182775,
+      "std": 197467.7394207256,
+      "min": 0.042387825,
+      "max": 2000000.0
+    },
+    "SYN Flag Count": {
+      "mean": 0.048,
+      "median": 0.0,
+      "std": 0.21398031486634603,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "ACK Flag Count": {
+      "mean": 0.25,
+      "median": 0.0,
+      "std": 0.433446365197594,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "Average Packet Size": {
+      "mean": 137.12994809774403,
+      "median": 77.825,
+      "std": 199.38627833581643,
+      "min": 0.0,
+      "max": 1463.738776
+    }
+  },
+  "attack_features": {
+    "Flow Duration": {
+      "mean": 56049175.792,
+      "median": 84684850.5,
+      "std": 45752500.541801624,
+      "min": 1.0,
+      "max": 119421536.0
+    },
+    "Total Fwd Packets": {
+      "mean": 5.258,
+      "median": 6.0,
+      "std": 2.652830756389123,
+      "min": 1.0,
+      "max": 15.0
+    },
+    "Total Backward Packets": {
+      "mean": 4.084,
+      "median": 6.0,
+      "std": 2.8992680991971134,
+      "min": 0.0,
+      "max": 8.0
+    },
+    "Total Length of Fwd Packets": {
+      "mean": 294.734,
+      "median": 335.5,
+      "std": 342.2355352197289,
+      "min": 0.0,
+      "max": 4242.0
+    },
+    "Total Length of Bwd Packets": {
+      "mean": 7464.026,
+      "median": 11595.0,
+      "std": 5528.257458039444,
+      "min": 0.0,
+      "max": 11632.0
+    },
+    "Flow Bytes/s": {
+      "mean": 3978366.065463995,
+      "median": 121.15216204999999,
+      "std": 88547652.55659904,
+      "min": 0.0,
+      "max": 1980000000.0
+    },
+    "Flow Packets/s": {
+      "mean": 167072.01847285772,
+      "median": 0.160384052,
+      "std": 437217.9311021874,
+      "min": 0.017104551,
+      "max": 2000000.0
+    },
+    "SYN Flag Count": {
+      "mean": 0.012,
+      "median": 0.0,
+      "std": 0.10899430957182159,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "ACK Flag Count": {
+      "mean": 0.658,
+      "median": 1.0,
+      "std": 0.4748546871916669,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "Average Packet Size": {
+      "mean": 621.3719318893079,
+      "median": 851.60714285,
+      "std": 471.0145159984788,
+      "min": 0.0,
+      "max": 1983.0
+    }
+  },
+  "benign_model_scores": {
+    "sample_count": 500,
+    "scored_count": 500,
+    "error_count": 0,
+    "anomaly_count": 22,
+    "normal_count": 478,
+    "anomaly_percentage": 4.4,
+    "score_min": 2.9411065582962692e-08,
+    "score_median": 1.2578790915540594e-06,
+    "score_max": 0.00018161947082262486
+  },
+  "attack_model_scores": {
+    "sample_count": 500,
+    "scored_count": 500,
+    "error_count": 0,
+    "anomaly_count": 187,
+    "normal_count": 313,
+    "anomaly_percentage": 37.4,
+    "score_min": 1.832134159940324e-07,
+    "score_median": 1.9415654605836608e-05,
+    "score_max": 0.001048282952979207
+  },
+  "important_note": "These are scores on sampled CICIDS2017 training data, not scores from live network traffic. This report does not independently validate the model or select a new threshold."
+}

@@ -1,0 +1,62 @@
+{
+  "model": "production",
+  "threshold": 2.6256161800119686e-05,
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "device": "cpu",
+  "benign_records_tested": 439683,
+  "benign_false_positives": 22093,
+  "benign_false_positive_rate": 0.050247564722766175,
+  "attack_records_tested": 31306,
+  "attack_results_weakest_first": [
+    {
+      "attack_type": "DoS GoldenEye",
+      "records_tested": 10000,
+      "detected": 1165,
+      "missed": 8835,
+      "recall_percent": 11.65,
+      "average_score": 1.8748014475418982e-05,
+      "median_score": 1.176367959487834e-05
+    },
+    {
+      "attack_type": "DoS Slowhttptest",
+      "records_tested": 5499,
+      "detected": 1224,
+      "missed": 4275,
+      "recall_percent": 22.26,
+      "average_score": 4.664340150382141e-05,
+      "median_score": 1.9296758182463236e-05
+    },
+    {
+      "attack_type": "DoS Hulk",
+      "records_tested": 10000,
+      "detected": 3412,
+      "missed": 6588,
+      "recall_percent": 34.12,
+      "average_score": 2.6054983550351808e-05,
+      "median_score": 1.9415407223277725e-05
+    },
+    {
+      "attack_type": "DoS slowloris",
+      "records_tested": 5796,
+      "detected": 3016,
+      "missed": 2780,
+      "recall_percent": 52.04,
+      "average_score": 5.17838205463069e-05,
+      "median_score": 2.7481113647809252e-05
+    },
+    {
+      "attack_type": "Heartbleed",
+      "records_tested": 11,
+      "detected": 11,
+      "missed": 0,
+      "recall_percent": 100.0,
+      "average_score": 0.002673471212884496,
+      "median_score": 0.0030294174794107676
+    }
+  ],
+  "limitations": [
+    "Evaluation uses the Wednesday subset of CICIDS2017.",
+    "This dataset may overlap with data used during training.",
+    "Results do not establish performance on unseen real-world traffic."
+  ]
+}

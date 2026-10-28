@@ -1,0 +1,137 @@
+{
+  "experiment": "Random Forest binary classification baseline",
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "features": [
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Average Packet Size"
+  ],
+  "random_state": 42,
+  "test_size": 0.25,
+  "probability_threshold": 0.5,
+  "records": {
+    "total": 81306,
+    "training": 60979,
+    "test": 20327,
+    "benign_test": 12500,
+    "attack_test": 7827
+  },
+  "metrics": {
+    "accuracy": 0.9899640871746938,
+    "precision": 0.9798564774014856,
+    "attack_recall": 0.9943784336271879,
+    "f1_score": 0.9870640456563095,
+    "benign_false_positive_rate": 0.0128,
+    "roc_auc": 0.9993267714322218,
+    "true_negatives": 12340,
+    "false_positives": 160,
+    "false_negatives": 44,
+    "true_positives": 7783
+  },
+  "per_label_results": [
+    {
+      "label": "BENIGN",
+      "records_tested": 12500,
+      "detected_as_attack": 160,
+      "missed": 12340,
+      "recall_percent": null,
+      "false_alarm_percent": 1.28
+    },
+    {
+      "label": "DoS GoldenEye",
+      "records_tested": 2500,
+      "detected_as_attack": 2492,
+      "missed": 8,
+      "recall_percent": 99.68,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS Hulk",
+      "records_tested": 2500,
+      "detected_as_attack": 2474,
+      "missed": 26,
+      "recall_percent": 98.96,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS Slowhttptest",
+      "records_tested": 1375,
+      "detected_as_attack": 1373,
+      "missed": 2,
+      "recall_percent": 99.85,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS slowloris",
+      "records_tested": 1449,
+      "detected_as_attack": 1442,
+      "missed": 7,
+      "recall_percent": 99.52,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "Heartbleed",
+      "records_tested": 3,
+      "detected_as_attack": 2,
+      "missed": 1,
+      "recall_percent": 66.67,
+      "false_alarm_percent": null
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Flow Packets/s",
+      "importance": 0.2047204980008669
+    },
+    {
+      "feature": "Flow Duration",
+      "importance": 0.1570770916110645
+    },
+    {
+      "feature": "Average Packet Size",
+      "importance": 0.13486923464697181
+    },
+    {
+      "feature": "Total Backward Packets",
+      "importance": 0.12188209194994722
+    },
+    {
+      "feature": "Total Length of Bwd Packets",
+      "importance": 0.11627572860322977
+    },
+    {
+      "feature": "Flow Bytes/s",
+      "importance": 0.11450555167642586
+    },
+    {
+      "feature": "Total Length of Fwd Packets",
+      "importance": 0.06813333962953254
+    },
+    {
+      "feature": "Total Fwd Packets",
+      "importance": 0.0661543814262408
+    },
+    {
+      "feature": "ACK Flag Count",
+      "importance": 0.008551231541855879
+    },
+    {
+      "feature": "SYN Flag Count",
+      "importance": 0.00783085091386472
+    }
+  ],
+  "limitations": [
+    "This is a supervised binary classifier, not an autoencoder.",
+    "A random split from the same dataset is not independent real-world validation.",
+    "Results depend on the sampled class distribution.",
+    "The default probability threshold is 0.50; it is not guaranteed to produce a 5% false-positive rate.",
+    "The candidate model does not replace the production model."
+  ]
+}

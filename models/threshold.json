@@ -1,0 +1,19 @@
+{
+    "threshold": 2.6256161800119686e-05,
+    "percentile": 95.0,
+    "samples": 87933,
+    "input_dim": 10,
+    "training_data": "CICIDS2017 Wednesday BENIGN traffic",
+    "features": [
+        "Flow Duration",
+        "Total Fwd Packets",
+        "Total Backward Packets",
+        "Total Length of Fwd Packets",
+        "Total Length of Bwd Packets",
+        "Flow Bytes/s",
+        "Flow Packets/s",
+        "SYN Flag Count",
+        "ACK Flag Count",
+        "Average Packet Size"
+    ]
+}

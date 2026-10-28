@@ -1,0 +1,53 @@
+{
+  "evaluation_type": "Random held-out rows from CICIDS2017 Wednesday; not independent of the source dataset",
+  "device": "cpu",
+  "features": [
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Average Packet Size"
+  ],
+  "training_rows": 100000,
+  "calibration_rows": 65949,
+  "test_benign_rows": 20000,
+  "test_attack_rows": 20011,
+  "candidate_threshold": 0.0004938646219670763,
+  "candidate_roc_auc": 0.8272227512368198,
+  "current_model_metrics": {
+    "threshold": 2.6256161800119686e-05,
+    "accuracy": 0.6254530004248832,
+    "precision": 0.8543223804823015,
+    "recall": 0.3027334965768827,
+    "f1": 0.4470518780901778,
+    "false_positive_rate": 0.05165,
+    "true_negative": 18967,
+    "false_positive": 1033,
+    "false_negative": 13953,
+    "true_positive": 6058
+  },
+  "candidate_model_metrics": {
+    "threshold": 0.0004938646219670763,
+    "accuracy": 0.5643198120516858,
+    "precision": 0.7806311207834603,
+    "recall": 0.17925141172355205,
+    "f1": 0.29155490530764855,
+    "false_positive_rate": 0.0504,
+    "true_negative": 18992,
+    "false_positive": 1008,
+    "false_negative": 16424,
+    "true_positive": 3587
+  },
+  "candidate_artifacts": {
+    "model": "C:\\Users\\rohan\\OneDrive\\Desktop\\nptel\\aegis-agent-ml\\models\\candidate_autoencoder.pth",
+    "scaler": "C:\\Users\\rohan\\OneDrive\\Desktop\\nptel\\aegis-agent-ml\\models\\candidate_scaler.pkl",
+    "threshold": "C:\\Users\\rohan\\OneDrive\\Desktop\\nptel\\aegis-agent-ml\\models\\candidate_threshold.json"
+  },
+  "production_artifacts_changed": false,
+  "warning": "This is a held-out row evaluation from the same source dataset, not a test on an independent capture or day. Do not deploy the candidate based on this result alone."
+}

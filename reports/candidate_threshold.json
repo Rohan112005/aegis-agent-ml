@@ -1,0 +1,30 @@
+{
+    "candidate_threshold": 2.6399691705591977e-05,
+    "target_false_positive_rate": 0.05,
+    "measured_benign_false_positive_rate": 0.04613058012871535,
+    "benign_validation_rows": 87946,
+    "score_median": 1.283194023926626e-06,
+    "score_p95": 2.6399691705591977e-05,
+    "score_p99": 8.120597267407034e-05,
+    "current_threshold_file": "C:\\Users\\rohan\\OneDrive\\Desktop\\nptel\\aegis-agent-ml\\models\\threshold.json",
+    "current_threshold_data": {
+        "threshold": 2.6256161800119686e-05,
+        "percentile": 95.0,
+        "samples": 87933,
+        "input_dim": 10,
+        "training_data": "CICIDS2017 Wednesday BENIGN traffic",
+        "features": [
+            "Flow Duration",
+            "Total Fwd Packets",
+            "Total Backward Packets",
+            "Total Length of Fwd Packets",
+            "Total Length of Bwd Packets",
+            "Flow Bytes/s",
+            "Flow Packets/s",
+            "SYN Flag Count",
+            "ACK Flag Count",
+            "Average Packet Size"
+        ]
+    },
+    "note": "Candidate only. Existing models/threshold.json was not changed. This validation split may already have been used during training threshold calibration; use an independent benign dataset for a stronger final assessment."
+}

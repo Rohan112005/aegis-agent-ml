@@ -1,0 +1,147 @@
+{
+  "experiment": "Random Forest exact-feature-group evaluation",
+  "dataset": "Wednesday-workingHours.pcap_ISCX.csv",
+  "features": [
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "SYN Flag Count",
+    "ACK Flag Count",
+    "Average Packet Size"
+  ],
+  "sampling": {
+    "max_benign": 50000,
+    "max_per_attack": 10000,
+    "random_state": 42
+  },
+  "split": {
+    "method": "StratifiedGroupKFold",
+    "folds": 4,
+    "evaluated_fold": 1,
+    "probability_threshold": 0.5,
+    "training_records": 60924,
+    "test_records": 20357,
+    "training_feature_groups": 52962,
+    "test_feature_groups": 17656,
+    "overlapping_feature_groups": 0
+  },
+  "ambiguous_feature_groups_excluded": {
+    "groups": 675,
+    "rows": 60519
+  },
+  "metrics": {
+    "accuracy": 0.9979368276268605,
+    "precision": 0.9972243250063083,
+    "attack_recall": 0.9974760222110045,
+    "f1_score": 0.9973501577287066,
+    "benign_false_positive_rate": 0.0017694844365800692,
+    "roc_auc": 0.9998962739120656,
+    "true_negatives": 12411,
+    "false_positives": 22,
+    "false_negatives": 20,
+    "true_positives": 7904
+  },
+  "per_label_results": [
+    {
+      "label": "BENIGN",
+      "records_tested": 12433,
+      "detected_as_attack": 22,
+      "missed": 12411,
+      "recall_percent": null,
+      "false_alarm_percent": 0.18
+    },
+    {
+      "label": "DoS GoldenEye",
+      "records_tested": 2526,
+      "detected_as_attack": 2519,
+      "missed": 7,
+      "recall_percent": 99.72,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS Hulk",
+      "records_tested": 2539,
+      "detected_as_attack": 2532,
+      "missed": 7,
+      "recall_percent": 99.72,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS Slowhttptest",
+      "records_tested": 1408,
+      "detected_as_attack": 1405,
+      "missed": 3,
+      "recall_percent": 99.79,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "DoS slowloris",
+      "records_tested": 1450,
+      "detected_as_attack": 1447,
+      "missed": 3,
+      "recall_percent": 99.79,
+      "false_alarm_percent": null
+    },
+    {
+      "label": "Heartbleed",
+      "records_tested": 1,
+      "detected_as_attack": 1,
+      "missed": 0,
+      "recall_percent": 100.0,
+      "false_alarm_percent": null
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Flow Packets/s",
+      "importance": 0.23560754972175915
+    },
+    {
+      "feature": "Flow Duration",
+      "importance": 0.1748102246513833
+    },
+    {
+      "feature": "Average Packet Size",
+      "importance": 0.12258915023571558
+    },
+    {
+      "feature": "Total Backward Packets",
+      "importance": 0.11861739777142255
+    },
+    {
+      "feature": "Total Length of Bwd Packets",
+      "importance": 0.11274798861736277
+    },
+    {
+      "feature": "Flow Bytes/s",
+      "importance": 0.09533423583022957
+    },
+    {
+      "feature": "Total Fwd Packets",
+      "importance": 0.06283426085655826
+    },
+    {
+      "feature": "Total Length of Fwd Packets",
+      "importance": 0.060015522331551996
+    },
+    {
+      "feature": "SYN Flag Count",
+      "importance": 0.008968713829279674
+    },
+    {
+      "feature": "ACK Flag Count",
+      "importance": 0.008474956154737258
+    }
+  ],
+  "limitations": [
+    "Exact feature groups are separated between training and testing.",
+    "Near duplicates may still exist.",
+    "The source dataset may overlap with previous experiments.",
+    "A random group split does not establish generalization to a different network, capture session, or unseen attack family.",
+    "This is a supervised binary classifier, not a zero-day detector."
+  ]
+}
